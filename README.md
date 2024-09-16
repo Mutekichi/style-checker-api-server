@@ -35,6 +35,12 @@ To start the server, run:
 npm start
 ```
 
+If you want to run the mock server, run:
+   
+```
+npm start:mock
+```
+
 The server will start on the port specified in your `.env` file (default is *3000*).
 
 ## Note

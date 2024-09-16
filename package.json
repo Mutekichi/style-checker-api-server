@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "start:mock": "node mock_gpt_server.js",
-    "start:openai": "node chatgpt-server.js",
+    "start": "node chatgpt-server.js",
+    "start:mock": "node mock-gpt-server.js",
+    "start:claude": "node bedrock-claude-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
