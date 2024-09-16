@@ -28,8 +28,8 @@ function generateMockResponse(prompt) {
   return JSON.stringify(appearanceCheck);
 }
 
-app.post('/api/claude-stream', upload.single('image'), (req, res) => {
-  console.log('Received request to /api/claude-stream');
+app.post('/api/chatgpt-stream', upload.single('image'), (req, res) => {
+  console.log('Received request to /api/chatgpt-stream');
   console.log('Request body:', req.body);
 
   const { prompt } = req.body;

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "start:mock": "node mock_claude_server.js",
+    "start:mock": "node mock_gpt_server.js",
     "start:openai": "node chatgpt-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
