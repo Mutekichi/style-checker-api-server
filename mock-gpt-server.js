@@ -8,7 +8,6 @@ app.use(cors());
 
 const upload = multer({ dest: 'uploads/' });
 
-// モックレスポンスを生成する関数
 function generateMockResponse(prompt) {
   const appearanceCheck = {
     dress: {
@@ -52,7 +51,6 @@ app.post('/api/chatgpt-stream', upload.single('image'), (req, res) => {
     'Transfer-Encoding': 'chunked'
   });
 
-  // ストリーミングをシミュレート
   const chunks = mockResponse.split('');
   let index = 0;
 
@@ -65,7 +63,7 @@ app.post('/api/chatgpt-stream', upload.single('image'), (req, res) => {
       res.end();
       console.log('Finished streaming mock response');
     }
-  }, 10);  // 10ミリ秒ごとに1文字を送信
+  }, 10); 
 });
 
 app.get('/api/test', (req, res) => {
